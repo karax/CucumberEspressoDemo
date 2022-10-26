@@ -1,5 +1,17 @@
 Feature: Login
-    Perform login on email and password are inputted
+
+    @login-feature
+    Scenario Outline: Try login with wrong password 3 times will show user blocked message
+        Given I am on login screen
+        When I input email <email>
+        And I input password "<password>"
+        And I press submit button
+        And I press submit button
+        And I press submit button
+        Then I should see user blocked error
+        Examples:
+            | email | password  |
+            | espresso@spoon.com  | lemon |
 
     @login-feature
     Scenario Outline: Input email and password in wrong format

@@ -28,6 +28,26 @@
             android:textSize="20sp"
             android:visibility="gone" />
 
+        <TextView
+            android:id="@+id/logged"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="user logged"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="user blocked"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"

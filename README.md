@@ -51,7 +51,7 @@ Install Plugin: Android Studio > Preferences > Plugins > Search "Gherkin" > Inst
 
     ```
     testApplicationId "com.emmasuzuki.cucumberespressodemo.test"
-    testInstrumentationRunner "com.emmasuzuki.cucumberespressodemo.test.Instrumentation"
+    testInstrumentationRunner "com.emmasuzuki.cucumberespressodemo.test.InstrumentationKotlin"
     ```
 
 4. Create assets/features directory under androidTest. This directory holds behavior(.feature) files.
