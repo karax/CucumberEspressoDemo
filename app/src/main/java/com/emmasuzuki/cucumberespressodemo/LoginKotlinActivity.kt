@@ -72,7 +72,7 @@ class LoginKotlinActivity : AppCompatActivity() {
         if (emailEditText.text.toString() != DEMO_EMAIL || passwordEditText.text
                 .toString() != DEMO_PASSWORD
         ) {
-            if (isUserBlocked) {
+            if (!isUserBlocked) {
                 errorView!!.visibility = View.VISIBLE
                 loginBusinessRules.increaseTryNumber()
             } else {
